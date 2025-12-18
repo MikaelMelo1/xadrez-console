@@ -38,9 +38,11 @@ namespace xadrez
                     catch (TabuleiroException e)
                     {
                         Console.WriteLine(e.Message);
-                        Console.ReadLine(); // pausa para o usuário ler o erro
+                        Console.ReadLine(); 
                     }
                 }
+                Console.Clear();
+                Tela.imprimirPartida(partida);
             }
             catch (TabuleiroException e)
             {
